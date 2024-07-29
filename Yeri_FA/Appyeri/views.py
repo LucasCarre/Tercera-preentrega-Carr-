@@ -2,19 +2,19 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def inicio(request):
-    return HttpResponse("Vista inicio")
+    return render(request, 'appyeri/inicio.html')
 
 def cursos(request):
-    return HttpResponse("Vista cursos")
+    return render(request, 'appyeri/cursos.html')
 
 def profesores(request):
-    return HttpResponse("Vista profesores")
+    return render(request, 'appyeri/profesores.html')
 
 def alumnos(request):
-    return HttpResponse("Vista estudiantes")
+    return render(request, 'appyeri/alumnos.html')
 
 def practicas(request):
-    return HttpResponse("Vista practicas")
+    return render(request, 'appyeri/practicas.html')
 
 def sugerencias(request):
-    return HttpResponse("Vista sugerencias")
+    return render(request, 'appyeri/sugerencias.html')
